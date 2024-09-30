@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OAuth Callback</title>
+</head>
+<body>
+    <h1>OAuth Redirect Successful</h1>
+    <p id="params"></p>
+    
+    <script>
+        // 获取 URL 参数并显示
+        const params = new URLSearchParams(window.location.search);
+        document.getElementById('params').innerText = 'URL Parameters: ' + params.toString();
+    </script>
+</body>
